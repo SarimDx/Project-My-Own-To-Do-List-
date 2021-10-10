@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>To Do List</title>
+    <link rel="shortcut icon" href="img/shining-circle-purple-lighting-isolated-dark-background_1441-2396.jpg" type="image/png">
+</head>
+<body>
+<section>
+    <div class="container">
+<div class="text_option">
+    <h1><a href="index.html">To Do List</a></h1>
+</div>
+<figure class="motivation">
+    <blockquote>
+        We all change, when you think about it, we're all different people; all through our lives, and that's okay, that's good, you've gotta keep moving, so long as you remember all the people that you used to be.
+    </blockquote>
+    <figcaption>Matt Smith (Doctor Who)</figcaption>
+  </figure>
+        <div id="todolist" class="todolist">
+<div id="toDo" class="to_do" ondrop="dropIt(event)" ondragover="allowDrop(event)">
+    <h3>to do:</h3>
+    <div class="addCard">
+        <input type="text" name="todoAdd" placeholder="Add A To Do Card" class="TodoInput">
+        <button type="submit" class="add_todo"><i class="fas fa-plus-square"></i></button>
+    </div>
+</div>
+<div id="Doing" class="doing" ondrop="dropIt(event)" ondragover="allowDrop(event)">
+    <h3>doing:</h3>
+    <div class="addCard">
+        <input type="text" name="todoAdd" placeholder="Add A To Do Card" class="TodoInputDoing">
+        <button type="submit" class="add_doing"><i class="fas fa-plus-square"></i></button>
+    </div>
+</div>
+<div id="Done" class="done" ondrop="dropIt(event)" ondragover="allowDrop(event)">
+    <h3>done:</h3>
+    <div class="addCard">
+        <input type="text" name="todoAdd" placeholder="Add A To Do Card" class="TodoInputDone">
+        <button type="submit" class="add_done"><i class="fas fa-plus-square"></i></button>
+    </div>
+</div>
+        </div>
+        <div class="credit">
+                <p>Copyright © 2021 SarimDx . Designed by SarimDx</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/Sarime.Dx.300/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/sarimeabdebari/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCNZLhgmzDzD8229iR2phX8A"><i class="fab fa-youtube"></i></a>
+                    <a href="https://github.com/SarimDx"><i class="fab fa-github"></i></a>
+                </div>
+        </div>
+    </div>
+</section>  
+    <script src="main.js"></script>
+</body>
+
+</html>   

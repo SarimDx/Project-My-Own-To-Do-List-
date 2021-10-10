@@ -1,0 +1,232 @@
+:root {
+  --main-color: #19c8fa;
+  --second-color: #05acdb;
+  --transperent-color: rgb(15 116 143 / 60%);
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+ul {
+  list-style: none;
+}
+li {
+  list-style: none;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+i,
+button {
+  cursor: pointer;
+}
+section {
+  position: absolute;
+  background-image: url(../img/landing.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section::before {
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 40%);
+}
+.container {
+  background-color: var(--transperent-color);
+  position: absolute;
+  width: 85%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+}
+.container .text_option {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .text_option h1 {
+  font-size: 40px;
+}
+.container .motivation {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.container .motivation blockquote {
+  width: 80%;
+}
+.container .todolist {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .todolist .to_do,
+.container .todolist .doing,
+.container .todolist .done {
+  width: 400px;
+  height: 300px;
+  border: 2px solid var(--main-color);
+  margin: 0 20px;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+/* corner */
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--second-color);
+}
+
+.container .todolist div h3 {
+  margin: 10px 20px;
+}
+.container .todolist div .addCard {
+  display: flex;
+  margin: 10px 20px;
+  justify-content: space-around;
+}
+.container .todolist div input {
+  background-color: white;
+  border: none;
+  width: 80%;
+  height: 28px;
+}
+.container .todolist div input::placeholder {
+  padding: 0 20px;
+}
+.container .todolist div input:focus::placeholder {
+  padding: 0;
+}
+.container .todolist div input:focus {
+  padding-left: 20px;
+  color: black;
+  outline: none !important;
+}
+.container .todolist div button {
+  background-color: white;
+  border: none;
+  width: 20%;
+}
+.container .todolist div button:hover i {
+  font-size: 24px;
+}
+.container .todolist div button i {
+  font-size: 22px;
+  color: #075ee9;
+}
+.container .credit {
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+.container .credit p {
+  padding: 10px 20px;
+}
+.container .credit .social-icons a i {
+  font-size: 20px;
+  padding: 10px 20px;
+}
+.container .credit .social-icons a i.fa-facebook-f {
+  color: #2d88ff;
+}
+.container .credit .social-icons a i.fa-instagram {
+  color: rgb(138, 58, 185);
+}
+.container .credit .social-icons a i.fa-youtube {
+  color: red;
+}
+.container .credit .social-icons a i.fa-github {
+  color: white;
+}
+.ToDo {
+  cursor: grab;
+  border: 1px solid var(--transperent-color);
+  height: fit-content;
+  background-color: #ffffff;
+  color: rgb(54, 53, 53);
+  font-size: 16px;
+  margin: 0 20px;
+  width: 290px;
+}
+.ultodo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btnli {
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+}
+.litodo {
+  margin: 0 20px;
+  max-width: 60%;
+  word-wrap: break-word;
+}
+.fa-archive {
+  color: rgb(255, 81, 0);
+  margin-left: 10px;
+  font-size: 18px;
+}
+.fa-check-square {
+  color: rgb(3, 184, 3);
+  font-size: 18px;
+}
+.check {
+  opacity: 60%;
+  text-decoration: 3px line-through var(--main-color);
+}
+.fall {
+  position: absolute;
+  transition: 0.6s;
+  transform: translateY(120px) rotateZ(20deg);
+  opacity: 0;
+}
+.dragging {
+  opacity: 50%;
+}
