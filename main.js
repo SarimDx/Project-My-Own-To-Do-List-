@@ -84,7 +84,7 @@ function addtodoli(e) {
         btnLi.appendChild(btnCheck);
         btnLi.appendChild(btnArchive);
         // ? Value content
-        TodoLi.innerHTML = addTodoV.value;
+        TodoLi.innerText = addTodoV.value;
         addTodoV.value = "";
         addTodoV.focus();
         to_do.appendChild(TodoDiv);
@@ -127,7 +127,7 @@ function addDoingli(e) {
         btnLi.appendChild(btnCheck);
         btnLi.appendChild(btnArchive);
         // ? Value content
-        doingLi.innerHTML = document.querySelector(".TodoInputDoing").value;
+        doingLi.innerText = document.querySelector(".TodoInputDoing").value;
         document.querySelector(".TodoInputDoing").value = "";
         document.querySelector(".TodoInputDoing").focus();
         Doing.appendChild(doingDiv);
@@ -172,7 +172,7 @@ function addDoneli(e) {
         btnLi.appendChild(btnCheck);
         btnLi.appendChild(btnArchive);
         // ? Value content
-        doneLi.innerHTML = document.querySelector(".TodoInputDone").value;
+        doneLi.innerText = document.querySelector(".TodoInputDone").value;
         document.querySelector(".TodoInputDone").value = "";
         document.querySelector(".TodoInputDone").focus();
         Done.appendChild(doneDiv);
