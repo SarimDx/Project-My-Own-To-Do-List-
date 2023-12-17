@@ -1,2 +1,3 @@
 # Project-My-Own-To-Do-List-
-just design and bulid purely by me 
+To Do List To Show Case My Skils In JavaScript Logic 
+website Link "https://sarimdx.github.io/Project-My-Own-To-Do-List-/";
